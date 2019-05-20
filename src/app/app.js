@@ -23,4 +23,5 @@ function loadEmployees() {
         });
     });
 }
+
 loadEmployees();
