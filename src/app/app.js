@@ -23,8 +23,4 @@ function loadEmployees() {
         });
     });
 }
-
-// test
-
-
 loadEmployees();
