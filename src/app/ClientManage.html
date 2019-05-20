@@ -1,0 +1,230 @@
+<div id="wrapper">
+    <div class="wrap-bg">
+        <!-- header -->
+        <div id="header">
+            <div class="content">
+                <div class="head">
+                    <div class="widget">
+                        <h1 class="logo">
+                            <img src="../assets/images/logo.png">
+                            <!-- <a href="#" >Purchasing Practice</a> -->
+                        </h1>
+                        <div class="header-tr">
+                            <ul class="login-links">
+                                <li>Welcome, Admin</li>
+                                <li><a href="#" title="Logout"><span class="button_logout"
+                                            style="cursor: pointer;">Logout</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="navigation">
+                        <span class="ltcorn">&nbsp;</span><span class="rtcorn">&nbsp;</span>
+                        <div class="menu">
+                            <div class="menu-widget">
+                                <ul>
+                                    <li><a id="aHome" href="#" class="drop">Home</a></li>
+                                    <li><a id="aClient" href="#" class="drop">Client</a>
+                                        <div id="divClient" class="child-dropdown" style="display: block;">
+                                            <ul>
+                                                <li><a id="aClients" href="#" title="Client"
+                                                        style="background:#929292; color: #000;">Client</a></li>
+                                                <li><a id="aBranch" href="#" title="Branch">Branch</a></li>
+                                                <li><a id="aClientOwner" href="#" title="Client Owner">Client Owner</a>
+                                                </li>
+                                                <li><a id="aClinetManager" href="#" title="Client Manager"> Client
+                                                        Manager</a></li>
+                                                <li><a id="aAuthorization" href="#"
+                                                        title="Authorization">Authorization</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a id="aParticipant" href="#" class="drop">Participant</a> </li>
+                                    <li><a id="aCompetencies" href="#" class="drop">Competency</a> </li>
+                                    <li><a id="aRole" href="#" class="drop">Role</a> </li>
+                                    <li><a id="aQuestions" href="#" class="drop">Questions</a></li>
+                                    <li><a id="aAssessment" href="#" class="drop">Assessment</a> </li>
+                                    <li><a id="aImport" href="#" class="drop">Import</a> </li>
+                                    <li><a id="aContact" href="#" class="drop">Contact</a> </li>
+                                    <li><a id="aSettings" href="#" class="drop">Settings</a> </li>
+                                    <li><a id="aReports" href="#" class="drop">Reports</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- start -->
+        <div id="cph_Body_upd">
+            <div class="divLeft">
+                <h2 class="HeadInSearch">
+                    Search
+                </h2>
+            </div>
+            <div class="divRight">
+                <input type="submit" name="btnAdd" value="Add Client" id="cph_Body_btnAdd" class="button"></div>
+            <div class="clear">
+            </div>
+            <!--Search Content Start -->
+            <div class="searchCont">
+                <table border="0" cellpadding="0" cellspacing="0" class="tbl_content" width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>
+                                    Select Client</label>
+                            </td>
+                            <td>
+                                <select name="ddlClient" id="cph_Body_ddlClient">
+                                    <option value="0">All Clients</option>
+                                    <option value="5">Demo Client</option>
+                                    <option value="27">American Can (UK) Ltd</option>
+                                    <option value="35">DPWN</option>
+                                    <option value="47">Data Core</option>
+                                    <option value="61">Wellpoint</option>
+                                    <option value="82">Testing Client</option>
+                                    <option value="83">Lululemon Athletica</option>
+                                    <option value="87">Demo Org Inc</option>
+                                    <option value="115">Kerry Ingredients &amp; Flavours</option>
+                                    <option value="120">ÅR Packaging Group AB</option>
+                                    <option value="149">Kerry Group</option>
+                                    <option value="153">AbbVie</option>
+                                    <option value="155">Intertape Polymer Corp.</option>
+                                    <option value="166">AbbVie Inc.</option>
+                                    <option value="176">Demo Client1</option>
+                                    <option value="187">Leggett &amp; Platt</option>
+                                    <option value="192">IAG</option>
+                                    <option value="197">AbbVie Incorporated</option>
+                                    <option value="445">Correct Score Inc</option>
+                                    <option value="453">True Data Inc</option>
+                                    <option value="491">OMG !!!</option>
+                                    <option value="495">OMV Trial</option>
+                                    <option value="511">TestClient1</option>
+
+                                </select>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="submit" name="btnSearch" value="Search" id="cph_Body_btnSearch"
+                                    accesskey="s" class="button but-left">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Search Content End -->
+            <!--Table Content Strat -->
+            <div class="clientcont">
+                <div style="float: left;">
+                    <h2 class="HeadIn">
+                        Client List
+                    </h2>
+                </div>
+                <div style="float: right;">
+                    <input type="submit" name="btnClick" value="Click Me" id="cph_Body_btnClick" style="display: none;">
+                    <input type="image" name="imgBtnExport" id="cph_Body_imgBtnExport" title="Click to Export in Excel"
+                        src="../assets/images/excel_export.png" style="margin-top: 8px; margin-right: -10px;">
+                    &nbsp;&nbsp;
+                </div>
+                <div class="clear">
+                </div>
+                <div id="divClientPDF">
+                    <input type="hidden" name="hPageIndex" id="cph_Body_hPageIndex" value="0">
+                    <div>
+                        <table class="gridlist" cellspacing="2" cellpadding="3" rules="all" border="1px"
+                            id="cph_Body_grdClient">
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Serial No</th>
+                                    <th scope="col">Client Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Contact Name</th>
+                                    <th scope="col">Telephone</th>
+                                    <th scope="col">Created On</th>
+                                    <th scope="col">Is Active</th>
+                                    <th scope="col">Edit</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>Demo Client</td>
+                                    <td>tuhin.paul@indusnet.co.in</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <span id="cph_Body_grdClient_lblCreateDate_0">2/6/2014 3:21:41 PM</span>
+                                    </td>
+                                    <td>
+                                        <input type="image" name="ctl00$cph_Body$grdClient$ctl02$imgStatus"
+                                            id="cph_Body_grdClient_imgStatus_0" title="Click to Change Status"
+                                            src="../assets/images/active.png">
+                                        <input type="hidden" name="ctl00$cph_Body$grdClient$ctl02$hfUserID"
+                                            id="cph_Body_grdClient_hfUserID_0" value="5">
+                                    </td>
+                                    <td>
+                                        <input type="image" name="ctl00$cph_Body$grdClient$ctl02$imgEdit"
+                                            id="cph_Body_grdClient_imgEdit_0" title="Click to Edit"
+                                            src="../assets/images/edit-icon.png">
+                                        <!--For Delete-->
+                                        <img alt="" src="../assets/images/delete-icon.png" title="Click to Delete"
+                                            style="cursor: pointer;" onclick="ClickToDelete(5,true);">
+                                        <!--For Delete-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>American Can (UK) Ltd</td>
+                                    <td>dhenshall@purchasingpractice.com</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <span id="cph_Body_grdClient_lblCreateDate_1">3/1/2014 5:00:39 AM</span>
+                                    </td>
+                                    <td>
+                                        <input type="image" name="imgStatus" id="cph_Body_grdClient_imgStatus_1"
+                                            title="Click to Change Status" src="../assets/images/active.png">
+                                        <input type="hidden" name="hfUserID" id="cph_Body_grdClient_hfUserID_1"
+                                            value="27">
+                                    </td>
+                                    <td>
+                                        <input type="image" name="imgEdit" id="cph_Body_grdClient_imgEdit_1"
+                                            title="Click to Edit" src="../assets/images/edit-icon.png">
+                                        <!--For Delete-->
+                                        <img alt="" src="../assets/images/delete-icon.png" title="Click to Delete"
+                                            style="cursor: pointer;" onclick="ClickToDelete(27,true);">
+                                        <!--For Delete-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span>1</span></td>
+                                                    <td><a href="#">2</a></td>
+                                                    <td><a href="#">3</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- end -->
+    </div>
+</div>

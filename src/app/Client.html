@@ -1,0 +1,403 @@
+<div id="wrapper">
+    <div class="wrap-bg">
+        <!-- header -->
+        <div id="header">
+            <div class="content">
+                <div class="head">
+                    <div class="widget">
+                        <h1 class="logo">
+                            <img src="../assets/images/logo.png">
+                            <!-- <a href="#" >Purchasing Practice</a> -->
+                        </h1>
+                        <div class="header-tr">
+                            <ul class="login-links">
+                                <li>Welcome, Admin</li>
+                                <li><a href="#" title="Logout"><span class="button_logout"
+                                            style="cursor: pointer;">Logout</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="navigation">
+                        <span class="ltcorn">&nbsp;</span><span class="rtcorn">&nbsp;</span>
+                        <div class="menu">
+                            <div class="menu-widget">
+                                <ul>
+                                    <li><a id="aHome" href="#" class="drop">Home</a></li>
+                                    <li><a id="aClient" href="#" class="drop">Client</a>
+                                        <div id="divClient" class="child-dropdown" style="display: block;">
+                                            <ul>
+                                                <li><a id="aClients" href="#" title="Client"
+                                                        style="background:#929292; color: #000;">Client</a></li>
+                                                <li><a id="aBranch" href="#" title="Branch">Branch</a></li>
+                                                <li><a id="aClientOwner" href="#" title="Client Owner">Client Owner</a>
+                                                </li>
+                                                <li><a id="aClinetManager" href="#" title="Client Manager"> Client
+                                                        Manager</a></li>
+                                                <li><a id="aAuthorization" href="#"
+                                                        title="Authorization">Authorization</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a id="aParticipant" href="#" class="drop">Participant</a> </li>
+                                    <li><a id="aCompetencies" href="#" class="drop">Competency</a> </li>
+                                    <li><a id="aRole" href="#" class="drop">Role</a> </li>
+                                    <li><a id="aQuestions" href="#" class="drop">Questions</a></li>
+                                    <li><a id="aAssessment" href="#" class="drop">Assessment</a> </li>
+                                    <li><a id="aImport" href="#" class="drop">Import</a> </li>
+                                    <li><a id="aContact" href="#" class="drop">Contact</a> </li>
+                                    <li><a id="aSettings" href="#" class="drop">Settings</a> </li>
+                                    <li><a id="aReports" href="#" class="drop">Reports</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- start -->
+        <div style="float: left;">
+            <h2 class="HeadIn">
+                Client Add/Edit</h2>
+        </div>
+        <div style="float: right;">
+            <input type="submit" name="btnBack" value="Back" id="cph_Body_btnBack" accesskey="b" class="button">
+        </div>
+        <div style="clear: both;">
+        </div>
+        <div class="searchCont">
+            <div id="cph_Body_upd">
+                <table class="tbl_content">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>
+                                    Client Name <span>*</span></label>
+                            </td>
+                            <td>
+                                <input name="txtClientName" type="text" maxlength="256" id="cph_Body_txtClientName">
+                                <label style="width: 3px; float: left;">
+                                    <span id="cph_Body_RequiredFieldValidator1" title="Client Name can not be blank"
+                                        style="display:none;"><img alt="*" src="../assets/images/alert.png"
+                                            style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Address<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td>
+                                <textarea name="txtStreet" rows="2" cols="20" id="cph_Body_txtStreet"
+                                    style="height:100px;"></textarea>
+                                <label style="width: 10px;">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Country <span>*</span></label>
+                            </td>
+                            <td>
+                                <select name="ddlCountry" id="cph_Body_ddlCountry" placeholder="Select Country">
+                                    <option selected="selected" value="0">Select Country</option>
+                                    <option value="1">USA</option>
+                                    <option value="2">United Kingdom</option>
+                                    <option value="3">Canada</option>
+                                    <option value="4">Afghanistan</option>
+                                    <option value="5">Albania</option>
+                                    <option value="6">Algeria</option>
+                                    <option value="7">American Samoa</option>
+                                    <option value="8">Andorra</option>
+                                    <option value="9">Angola</option>
+                                    <option value="10">Anguilla</option>
+                                    <option value="11">Antarctica</option>
+                                    <option value="12">Antigua and Barbuda</option>
+                                    <option value="13">Argentina</option>
+                                    <option value="14">Armenia</option>
+                                    <option value="15">Aruba</option>
+                                    <option value="16">Australia</option>
+                                    <option value="17">Austria</option>
+                                    <option value="18">Azerbaijan</option>
+                                    <option value="19">Bahamas</option>
+                                    <option value="20">Bahrain</option>
+                                    <option value="21">Bangladesh</option>
+                                    <option value="22">Barbados</option>
+                                    <option value="23">Belarus</option>
+                                </select>
+                                <label style="width: 3px; float: left;">
+                                    <span id="cph_Body_RequiredFieldValidator2" title="You have to select Country"
+                                        style="display:none;">
+                                        <img alt="*" src="../assets/images/alert.png" style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    City<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td>
+
+                                <input name="ddlCity" type="text" id="cph_Body_ddlCity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    State<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td>
+                                <select name="ddlState" id="cph_Body_ddlState">
+                                    <option value="0">Select State</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Zip Code<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td>
+                                <input name="txtZip" type="text" maxlength="64" id="cph_Body_txtZip">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Contact Person<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td>
+                                <input name="txtContact" type="text" maxlength="256" id="cph_Body_txtContact">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Contact No.<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td>
+                                <input name="txtTelephone" type="text" maxlength="64" id="cph_Body_txtTelephone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Email ID <span>*</span></label>
+                            </td>
+                            <td>
+                                <input name="txtEmail" type="text" maxlength="128" id="cph_Body_txtEmail">
+                                <input type="hidden" name="hEmail" id="cph_Body_hEmail">
+                                <label style="width: 3px; float: left;">
+                                    <span id="cph_Body_RequiredFieldValidator3" title="Email cannot be blank"
+                                        style="display:none;"><img src="../assets/images/alert.png" alt=""
+                                            style="padding: 0px 5px;"></span>
+                                    <span id="cph_Body_RegularExpressionValidator1" title="Invalid Email"
+                                        style="display:none;">
+                                        <img alt="*" src="../assets/images/alert.png" style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Password <span>*</span></label>
+                            </td>
+                            <td>
+                                <input name="txtPassword" type="text" value="60df86" maxlength="128"
+                                    id="cph_Body_txtPassword">
+                                &nbsp;&nbsp;<input type="submit" name="btnGen" value="Generate Password"
+                                    id="cph_Body_btnGen" accesskey="g" class="button">
+                                <label class="reqlbl">
+                                    <span id="cph_Body_RequiredFieldValidator4" title="Password cannot be blank"
+                                        style="display:none;"><img src="../assets/images/alert.png" alt=""
+                                            style="padding: 0px 5px;"></span>
+                                    <span id="cph_Body_RegularExpressionValidator2"
+                                        title="Minimum Length of Password is 6" style="visibility:hidden;">
+                                        <img alt="*" src="../assets/images/alert.png" style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Industry <span>*</span></label>
+                            </td>
+                            <td>
+                                <select name="ddlIndustry" id="cph_Body_ddlIndustry">
+                                    <option value="0">Select Industry</option>
+                                    <option value="1">Aggriculture</option>
+                                    <option value="2">Apparel/Textile</option>
+                                    <option value="3">Automotive/other vehicles</option>
+                                    <option value="4">Building Materials</option>
+                                    <option value="5">Chemical</option>
+                                    <option value="6">Commercial printing</option>
+                                    <option value="7">Components and systems</option>
+                                    <option value="8">Computer equipment, hardware or peripherals</option>
+                                    <option value="9">Conglomerate</option>
+                                    <option value="10">Construction services</option>
+                                    <option value="11">Education</option>
+                                    <option value="12">Engineering</option>
+                                    <option value="13">Environmental services</option>
+                                    <option value="14">EPC Services</option>
+                                    <option value="15">Facilities management services</option>
+                                    <option value="16">Financial institutions/banking</option>
+                                    <option value="17">Financial institutions/insurance</option>
+                                    <option value="18">Food services</option>
+                                    <option value="19">Food, beverage and nutrition</option>
+                                    <option value="20">Glass processing</option>
+                                    <option value="21">Healthcare equipment</option>
+                                    <option value="22">Healthcare services</option>
+                                    <option value="23">Heavy machinery</option>
+                                    <option value="24">High Tech</option>
+                                    <option value="25">Hotel/Hospitality</option>
+                                    <option value="26">Industrial Equipment</option>
+                                    <option value="27">Legal Services</option>
+                                    <option value="28">Local government</option>
+                                    <option value="29">Marketing/Advertising/ Public Relations</option>
+                                    <option value="30">Media/entertainment</option>
+                                    <option value="31">Metals processing</option>
+                                    <option value="32">Mining</option>
+                                    <option value="33">National government</option>
+                                    <option value="34">Office equipment</option>
+                                    <option value="35">Oil &amp; Gas Refining</option>
+                                    <option value="36">Oil &amp; Gas Services</option>
+                                    <option value="37">Oil and gas exploration &amp; drilling</option>
+                                    <option value="38">Packaging</option>
+                                    <option value="39">Pharmaceuticals</option>
+                                    <option value="40">Plastics processing</option>
+                                    <option value="41">Professional/information services</option>
+                                    <option value="42">Pulp &amp; paper</option>
+                                    <option value="43">Real Estate</option>
+                                    <option value="44">Retail</option>
+                                    <option value="45">Software</option>
+                                    <option value="46">Telecommunication equipment</option>
+                                    <option value="47">Telecommunication services</option>
+                                    <option value="48">Timber/Forestry</option>
+                                    <option value="49">Transportation services</option>
+                                    <option value="50">Travel/hospitality/ Restaraunts</option>
+                                    <option value="51">Utilities</option>
+                                    <option value="52">White goods</option>
+                                    <option value="53">Wholesale/Distribution</option>
+                                    <option value="54">Other</option>
+
+                                </select>
+                                <label style="width: 3px; float: left;">
+                                    <span id="cph_Body_RequiredFieldValidator5" title="You have to select Industry"
+                                        style="display:none;">
+                                        <img alt="*" src="../assets/images/alert.png" style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Revenue <span>*</span></label>
+                            </td>
+                            <td>
+                                <select name="ddlRevenue" id="cph_Body_ddlRevenue">
+                                    <option value="0">Select Revenue</option>
+                                    <option value="1">Under $5 million</option>
+                                    <option value="2">$5 million to $10 million</option>
+                                    <option value="3">$10 million to $25 million</option>
+                                    <option value="4">$25 million to $50 million</option>
+                                    <option value="5">$50 million to $100 million</option>
+                                    <option value="6">$100 million to $250 million</option>
+                                    <option value="7">$250 million to $500 million</option>
+                                    <option value="8">$500 million to $1 billion</option>
+                                    <option value="9">$1 billion to $2.5 billion</option>
+                                    <option value="10">$2.5 billion to $5 billion</option>
+                                    <option value="11">$5 billion to $10 billion</option>
+                                    <option value="12">$10 billion to $25 billion</option>
+                                    <option value="13">Over $25 billion</option>
+
+                                </select>
+                                <label style="width: 3px; float: left;">
+                                    <span id="cph_Body_RequiredFieldValidator6" title="You have to select Revenue"
+                                        style="display:none;">
+                                        <img alt="*" src="../assets/images/alert.png" style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Purchasing Staff <span>*</span></label>
+                            </td>
+                            <td>
+                                <select name="ddlStaff" id="cph_Body_ddlStaff">
+                                    <option value="0">Select Staff</option>
+                                    <option value="1">1 to 10</option>
+                                    <option value="2">11 to 20</option>
+                                    <option value="3">20 to 30</option>
+                                    <option value="4">30 to 40</option>
+                                    <option value="5">40 to 50</option>
+                                    <option value="6">50 to 100</option>
+                                    <option value="7">100 to 150</option>
+                                    <option value="8">150 to 200</option>
+                                    <option value="9">200 to 300</option>
+                                    <option value="10">300 to 500</option>
+                                    <option value="11">500 to 1000</option>
+                                    <option value="12">More than 1000</option>
+
+                                </select>
+                                <label style="width: 3px; float: left;">
+                                    <span id="cph_Body_RequiredFieldValidator7" title="You have to select Stuff"
+                                        style="display:none;">
+                                        <img alt="*" src="../assets/images/alert.png" style="padding: 0px 5px;"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Client Type </label>
+                            </td>
+                            <td>
+                                <select name="ddlClientType" id="cph_Body_ddlClientType">
+                                    <option value="I">Immediate</option>
+                                    <option value="A">Authorize</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    Is Active<span style="padding-right: 10px;"></span></label>
+                            </td>
+                            <td align="left">
+                                <input id="cph_Body_chkActive" type="checkbox" name="chkActive">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="submit" name="btnSave" value="Save" id="cph_Body_btnSave" accesskey="s"
+                                    class="button but-left">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                <input type="hidden" name="hid" id="cph_Body_hid">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+</div>

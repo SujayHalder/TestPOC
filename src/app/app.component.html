@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <!-- <h1>
+    {{ title }}
+  </h1> -->
+  <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+</div>
+
+
+<div class="divLogin">
+  <div>
+      <img src="../assets/images/logo.png">
+  </div>
+  <h2 class="HeadIn">
+      Administrator Login</h2>
+  <table style="padding: 20px; width: 500px;" Class="tbl_content" >
+      <tr>
+          <td colspan="2">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label>Username <span>*</span></label>
+          </td>
+          <td>
+              <!-- <asp:TextBox ID="txtUserName" runat="server" autocomplete="off" CssClass="border-radius"></asp:TextBox> -->
+              <input type="text" name="FirstName" placeholder="Username" Class="border-radius">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label>
+                  Password <span>*</span></label>
+          </td>
+          <td>
+              <!-- <asp:TextBox ID="txtPassword" runat="server" CssClass="border-radius" TextMode="Password"></asp:TextBox> -->
+              <input type="Password" name="FirstName" Class="border-radius" placeholder="Password">
+          </td>
+      </tr>      
+      <tr>
+          <td>
+          </td>
+          <td>
+              <!-- <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="button" Style="width: 100px;
+                  margin-left: 10px; float: left;" OnClick="btnLogin_Click" />
+              <asp:LinkButton ID="lnkForgetPassword" runat="server" ForeColor="Blue" Style="float: right;
+                  margin-right: 22px;" PostBackUrl="~/Admin/ForgetPassword.aspx">Forget Password</asp:LinkButton> -->
+                  <button type="button" Class="button"  Style="width: 100px; margin-left: 10px; float: left;">Login</button> 
+                  <a href="app.ClientManage.html" Style="float: right; margin-right: 22px; font-size: 14px;" >Forget Password</a>
+          </td>
+      </tr>
+      <tr>
+          <td>
+          </td>
+          <td>
+              <!-- <asp:Label ID="lblError" runat="server" ForeColor="Red" Style="float: left; margin-left: 10px;"></asp:Label> -->
+              <!-- <label for="other">Other</label> -->
+          </td>
+      </tr>
+  </table>
+</div> 
+
+<router-outlet></router-outlet>
